@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="36" started-at="2016-09-06T02:32:58Z" finished-at="2016-09-06T02:32:58Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="36" started-at="2016-09-06T02:32:58Z" finished-at="2016-09-06T02:32:58Z">
+      <class name="Testng.DataProviderTest">
+        <test-method status="PASS" signature="verifyUser(java.lang.String, java.lang.String)[pri:0, instance:Testng.DataProviderTest@50c87b21]" name="verifyUser" duration-ms="11" started-at="2016-09-05T22:32:58Z" data-provider="user" finished-at="2016-09-05T22:32:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[root]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[passowrd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUser -->
+        <test-method status="PASS" signature="verifyUser(java.lang.String, java.lang.String)[pri:0, instance:Testng.DataProviderTest@50c87b21]" name="verifyUser" duration-ms="2" started-at="2016-09-05T22:32:58Z" data-provider="user" finished-at="2016-09-05T22:32:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[cnblogs.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[tankxiao]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUser -->
+        <test-method status="PASS" signature="verifyUser(java.lang.String, java.lang.String)[pri:0, instance:Testng.DataProviderTest@50c87b21]" name="verifyUser" duration-ms="1" started-at="2016-09-05T22:32:58Z" data-provider="user" finished-at="2016-09-05T22:32:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tank]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[xiao]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUser -->
+      </class> <!-- Testng.DataProviderTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
