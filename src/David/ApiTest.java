@@ -49,7 +49,7 @@ public class ApiTest {
 	@Before
 	public void setUp() throws Exception {
 		//driver = getFirefoxDriver();
-		String CHROME_DRIVER = "chromedriverMac";
+		String CHROME_DRIVER = "chromedriver.exe";
 		System.setProperty("webdriver.chrome.driver", CHROME_DRIVER);
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--test-type");
