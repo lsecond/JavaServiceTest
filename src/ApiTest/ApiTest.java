@@ -15,6 +15,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 
@@ -46,7 +47,10 @@ public class ApiTest {
 
 	@Before
 	public void setUp() throws Exception {
-		driver = getFirefoxDriver();
+		//driver = getFirefoxDriver();
+		String CHROME_DRIVER = "chromedriverMac";
+		System.setProperty("webdriver.chrome.driver", CHROME_DRIVER);
+		driver =  new ChromeDriver();
 		baseUrl = "http://openweathermap.org/current";
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	}
