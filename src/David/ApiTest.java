@@ -36,7 +36,7 @@ public class ApiTest {
 	private String baseUrl;
 	
 	
-	private String ApiId = "39b893cfb2a3eb0734da4f290d4750ae";
+	//private String ApiId = "39b893cfb2a3eb0734da4f290d4750ae";
 	/* try link http://openweathermap.org/appid to know more details*/
 	
 	public WebDriver getFirefoxDriver() {
@@ -70,19 +70,23 @@ public class ApiTest {
 
 	@Test
 	public void test() throws ClientProtocolException, IOException, InterruptedException {
+		// 进入加拿大移民局网站
 		driver.get(baseUrl);
+		//找到英语按钮并点击
 		WebElement english = driver.findElement(By.xpath("/html/body/main/div/div[1]/div[2]/section[1]/p/a"));
 		english.click();
+		//停留5秒
 		Thread.sleep(5000);
-		
+		//找到搜索输入框， 清空输入框然后输入 sponsorship 
 		WebElement searchInput = driver.findElement(By.id("wb-srch-q"));
 		searchInput.clear();
 		searchInput.sendKeys("sponsorship");
-		
+		//找到搜索按钮并点击
 		WebElement searchButton = driver.findElement(By.id("wb-srch-sub"));
 		searchButton.click();
-		
+		//等待5秒
 		Thread.sleep(5000);
+		//找到第一个搜索结果并打印出文字。
 		WebElement firstResult = driver.findElement(By.xpath("//*[@id='contentPlaceHolderMainContent_panelMainContent']/ol/li[1]/strong/a"));
 		System.out.println(firstResult.getText());
 		System.out.println("test finished");
